@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.List;
 
 public class C03_LocatorsGetMethods {
     public static void main(String[] args) {
@@ -22,7 +23,8 @@ public class C03_LocatorsGetMethods {
         searchbox.submit();//ENTER
     WebElement ergebnisearch  =  driver.findElement(By.className("sg-col-inner"));
         System.out.println("Ergebnis von Suche"+ergebnisearch.getText());
-
+        List<WebElement> aTagList=driver.findElements(By.tagName("a"));
+        System.out.println("Anzahl der LINK "+ aTagList.size());
         driver.close();
 
     }

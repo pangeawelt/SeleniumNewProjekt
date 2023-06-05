@@ -39,7 +39,7 @@ INSPECT ODER UNTERSUCHEN DANN UNIGUE ELEMENT WIRD GEFUNDEN
 
 
       //  WebElement searchbox = driver.findElement(By.id(""));
-    //findElements dreht null List andererseits findElement wirft Exception
+    //findElements dreht null List andererseits findElement wirft NoSuchException
     ///*
     //   Gehen Sie zur Amazon-Seite
         driver.get("https://www.amazon.com");
