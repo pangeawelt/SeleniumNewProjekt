@@ -26,10 +26,6 @@ public class C01_ClassWork {
 
 
 
-
-
-
-
 //
 //        Gehen Sie auf https://www.amazon.com/.
         driver.get("https://www.amazon.com");
@@ -59,7 +55,19 @@ public class C01_ClassWork {
 // Alle offenen Tabs und Fenster schließen, WebDriver beenden
       //  driver.quit();
 
+        // /7div/table/tbody/tr/td/a/ =mutlak
+        // Absolute und Relative Xpath
 
+    /* Absolute Xpath
+    Relative Xpath
+
+    tag name --atttribute- type
+      //input[@dir='auto']
+      // input[@autocomplete='off']
+      // //input[@name='field-keywords']
+      // //*[.='sehende VALUE']
+        //img[@class='s-image']
+     */
 
     }
 }
