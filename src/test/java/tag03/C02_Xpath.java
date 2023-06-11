@@ -30,11 +30,22 @@ public class C02_Xpath {
         searchbox.sendKeys("city bike"+ Keys.ENTER);
 
         //select 20 inch
-        WebElement we1= driver.findElement(By.xpath("//span[.='Unter 200 USD']"));
-        we1.click();
+       // WebElement we1= driver.findElement(By.xpath("//span[.='Unter 200 USD']"));
+     //   we1.click();
         //
+
+
+        //Ohne Atributte ZWEITE XPATHSWEG
+        WebElement rennräder= driver.findElement(By.xpath("//*[text()='Rennräder']"));
+        rennräder.click();
+        //ERSTE XPATHSWEG
+        ////img[@class='s-image']
+        WebElement erstebild= driver.findElement(By.xpath("//img[@class='s-image']"));
+        erstebild.click();
+
         Thread.sleep(3000);
         driver.quit();
+
 
 
     }
