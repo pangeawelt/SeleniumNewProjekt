@@ -50,7 +50,13 @@ input#session_password
         //searchbox.isDisplayed();//bild        Ist es sichtbar?
         //searchbox.isEnabled();// funktional   ist es zugänglich?
 
+        //  By.cssSelector("button[onclick='addElement()']
 
+        WebElement erstebild2 = driver.findElement(By.xpath("//*[text()='Mountainbikes']"));
+        System.out.println("erstebild.isDisplayed() = " + erstebild.isDisplayed());
+        System.out.println("erstebild.isSelected() = " + erstebild.isSelected());
+        System.out.println("erstebild.isEnabled() = " + erstebild.isEnabled());
+        erstebild.click();
         driver.quit();
     }
 }
